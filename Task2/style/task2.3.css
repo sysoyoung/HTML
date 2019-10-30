@@ -1,0 +1,33 @@
+
+.square {
+    list-style: square;
+}
+
+.circle {
+    list-style: circle;
+}
+
+.none {
+    list-style: none;
+}
+
+.zeros {
+    list-style: decimal-leading-zero;
+}
+
+.letters {
+    list-style: lower-alpha;
+}
+
+.roman {
+    list-style: lower-roman;
+}
+
+h4 {
+    display: inline;
+}
+
+div {
+    display: inline-block;
+    width: 250px;
+}
