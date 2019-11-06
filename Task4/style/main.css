@@ -1,0 +1,161 @@
+.breadcrumb1 > ul {
+    list-style: none;
+    display: inline-table;
+    margin-top: 50px;
+}
+
+.breadcrumb1 > ul > li {
+   display: inline;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    margin-right: -5px;
+    width: 50px;
+    padding: 15px 10px 15px 50px;
+    background-color: #00bedc;
+    border-top: 2px solid #cbf5fb;
+    border-bottom: 2px solid #cbf5fb;
+
+    text-decoration: none;
+    color: white;
+}
+
+a:after {
+    content: "";
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+    border-left: 43px solid #cbf5fb;
+    
+    position: absolute;
+    right: -39px;
+    top: -2px;
+    z-index: 1;
+}
+
+a:before {
+    content: "";
+    border-top: 24px solid transparent;
+    border-bottom: 23px solid transparent;
+    border-left: 40px solid #00bedc;
+
+    position: absolute;
+    left: 0;
+    top: 1px;
+    z-index: 2;
+}
+
+li:last-child > a {
+    background-color: #1a3c8b;
+    border-radius: 5px;
+    border-right: 2px solid #cbf5fb;
+}
+
+li:last-child > a:after {
+    display: none;
+}
+
+li:first-child > a {
+    border-radius: 5px;
+    border-left: 2px solid #cbf5fb;
+}
+
+li:first-child > a::before {
+    display: none;
+}
+
+
+
+.radio-buttom {
+    margin: 50px;
+}
+
+.radio {
+    display: block;
+	opacity: 0;
+    margin: 10px 0 0 7px;
+}
+
+.radio + label {
+	position: relative;
+	padding: 0 0 0 35px;
+}
+
+.radio + label:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 22px;
+	height: 22px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+
+.radio + label:after {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #d6d6d6;
+}
+
+.radio:checked + label:after {
+	background: green;
+}
+
+
+
+.checkboxes {
+    margin: 70px;
+}
+.checkbox {
+    display: block;
+	position: relative;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 30px 20px;
+}
+.checkbox + label {
+	position: relative;
+	padding: 0 0 0 60px;
+	cursor: pointer;
+}
+.checkbox + label:before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 50px;
+	height: 26px;
+	border-radius: 13px;
+    transition: .2s;
+    border: 1px solid #d8d8d8;
+}
+.checkbox + label:after {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 26px;
+	height: 26px;
+	border-radius: 14px;
+    background: #FFF;
+    border: 1px solid #8f8f8f;
+	box-shadow: 0 2px 5px rgba(0,0,0,.3);
+	transition: .2s;
+}
+.checkbox:checked + label:before {
+	background: #52d869;
+}
+.checkbox:checked + label:after {
+	left: 25px;
+}
+
+
+
+
